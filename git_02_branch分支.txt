@@ -1,0 +1,41 @@
+查看分支
+git branch
+
+重新命名分支為main
+舊有的會預設為master，建議重新命名為main
+git branch -M main
+-M 為大寫
+
+
+開啟gitk (GUI介面)
+gitk --all
+
+
+開啟gitk (GUI介面) 獨立執行  讓bash可以下指令
+gitk --all &
+
+
+
+建立分支
+git branch cat
+
+切換過去分支
+git checkout cat
+
+
+將base(當初開分支時的master a)的狀態，回寫過來b
+等同，將base的最新檔案整理過來
+而我僅專注在我開發的項目即可
+git rebase master
+
+
+查看2個branch的不同
+git diff master cat
+
+
+在b開發完畢後，使用過門甚麼問題，就要回到a  master
+以a的角度來看，將b合併過來
+先切換
+git checkout master
+git merge cat
+
