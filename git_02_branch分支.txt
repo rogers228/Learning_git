@@ -39,3 +39,10 @@ git diff master cat
 git checkout master
 git merge cat
 
+
+刪除分支
+如果已經開發完成，也完成將分支合併到主幹，就可以把分支刪除，維持乾淨
+或者，開發到一半失敗，直接刪除分支
+git branch -d cat
+
+
